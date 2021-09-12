@@ -5,8 +5,14 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello world!</Text>
-      <StatusBar style="auto" />
+
+      <View style={styles.carContainer}>
+        <View style={styles.titles}>
+          <Text style={styles.title}>Model S</Text>
+          <Text style={styles.title}>Starting at €65,300</Text>
+        </View>
+      </View>
+        <StatusBar style="auto" />
     </View>
   );
 }
