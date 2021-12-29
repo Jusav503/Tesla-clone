@@ -1,15 +1,16 @@
-import React from 'react'
-import { View, Image } from 'react-native'
+import React from "react";
+import { Image } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-import styles from "./styles"
+import styles from "./styles";
 
 const Header = () => {
-    return (
-        <View style={styles.container}>
-            <Image style={styles.logo} source={require("../../assets/images/logo.png")} />
-            <Image style={styles.menu} source={require("../../assets/images/menu.png")} />
-        </View>
-    )
-}
+  return (
+    <SafeAreaView style={styles.container}>
+      <Image style={styles.logo} source={require("../../assets/images/logo.png")}/>
+      <Image style={styles.menu} source={require("../../assets/images/menu.png")}/>
+    </SafeAreaView>
+  );
+};
 
-export default Header
+export default Header;

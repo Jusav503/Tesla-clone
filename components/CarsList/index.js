@@ -1,8 +1,9 @@
 import React from "react";
-import { View, Text, FlatList, Dimensions } from "react-native";
+import { View, FlatList, Dimensions } from "react-native";
+
 import CartItem from "../CarItem";
 import styles from "./styles";
-import cars from "./cars";
+import cars from "../../data/cars";
 
 const CartList = (props) => {
   return (
